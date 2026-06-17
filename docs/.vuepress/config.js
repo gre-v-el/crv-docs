@@ -5,6 +5,8 @@ import { viteBundler } from '@vuepress/bundler-vite'
 export default defineUserConfig({
   lang: 'en-US',
 
+  base: '/crv-docs/',
+
   title: 'Code ReViewer',
   description: 'Documentation for the Code ReViewer VS Code extension',
 
