@@ -14,8 +14,8 @@ Code ReViewer is a Visual Studio Code extension that does two things:
 
 Below is a screenshot of an analysis of the Java package `org.apache.kafka.connect.json` defining a json serializer, deserializer and converter. Each method in the analized classes is represented as a graph node. Directed edges of the graph represent calls, with arrows pointing from the caller to the calee. Each node is colored according to values of metrics selected in the right side bar. In the bottom right there is a histogram of values of the selected metric.
 
-![Code ReViewer Overview](../images/1-introduction-example.png)
+![Code ReViewer Overview](/images/guide/1-introduction-example.png)
 
 Below is the same graph with methods grouped into files. Each file is a contour encopassing all its methods.
 
-![Code ReViewer Overview](../images/1-introduction-example-contours.png)
+![Code ReViewer Overview](/images/guide/1-introduction-example-contours.png)
