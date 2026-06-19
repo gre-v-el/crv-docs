@@ -1,14 +1,14 @@
 ---
 home: true
 title: Home
-heroImage: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.ln-cdn.com%2Fimage%2Fplaceholder-logo-full.png&f=1&nofb=1&ipt=0c0893374cd052c86cec2277d66adb7f6cd4e920aa3c046c070003fd32e40274
+heroImage: /images/home-screenshot.png
 actions:
-  - text: Get Started
-    link: /guide/get-started.html
+  - text: Introduction
+    link: /guide/1-introduction.html
     type: primary
 
-  - text: Introduction
-    link: /guide/introduction.html
+  - text: Metrics reference
+    link: /guide/6-metrics-reference.html
     type: secondary
 
 features:
