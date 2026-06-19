@@ -8,22 +8,30 @@ export default defineUserConfig({
   base: '/crv-docs/',
 
   title: 'Code ReViewer',
-  description: 'Documentation for the Code ReViewer VS Code extension',
+  description: 'VS Code extension to visualize code structure and analyze code quality',
 
   theme: defaultTheme({
-    logo: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.ln-cdn.com%2Fimage%2Fplaceholder-logo-full.png&f=1&nofb=1&ipt=0c0893374cd052c86cec2277d66adb7f6cd4e920aa3c046c070003fd32e40274',
-    navbar: ['/', '/guide/get-started.html'],
+    // logo: '/images/logo.png',
+    navbar: ['/', '/guide/'],
     sidebar: {
       '/guide/': [
         {
           text: 'Guide',
           children: [
-            '/guide/introduction.html',
-            '/guide/get-started.html',
+            '/guide/1-introduction.html',
+            '/guide/2-get-started.html',
+            '/guide/3-triggering-the-analysis.html',
+            '/guide/4-graph-view-interface.html',
+            '/guide/5-language-support.html',
+            '/guide/6-metrics-reference.html',
+            '/guide/7-custom-metrics.html',
+            '/guide/8-troubleshooting.html',
           ],
         },
       ],
     },
+    lastUpdated: false,
+    contributors: false
   }),
 
   bundler: viteBundler(),
