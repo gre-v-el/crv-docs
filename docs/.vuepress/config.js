@@ -1,6 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -9,6 +10,13 @@ export default defineUserConfig({
 
   title: 'Code ReViewer',
   description: 'VS Code extension to visualize code structure and analyze code quality',
+
+  plugins: [
+    slimsearchPlugin({
+      indexContent: true,
+      sortStrategy: 'max'
+    }),
+  ],
 
   theme: defaultTheme({
     // logo: '/images/logo.png',
